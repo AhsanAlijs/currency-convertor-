@@ -81,8 +81,4 @@ function getExchangeRate() {
     }).catch(()=>{
         exchangeRateText.innerHTML = "Something Went Wrong"
     })
-
-
-
-
 }
