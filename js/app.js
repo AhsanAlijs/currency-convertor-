@@ -62,7 +62,6 @@ function getExchangeRate() {
     fetch(url).then(res => res.json()).then(result => {
         let exchangeRate = result.conversion_rates[toCurrency.value]
         let totalExchangeRate = (amountVal * exchangeRate).toFixed(2);
-        console.log(totalExchangeRate);
         exchangeRateText.innerHTML = `${amountVal} ${fromCurrency.value} = ${totalExchangeRate} ${toCurrency.value}`
     }).catch(()=>{
         exchangeRateText.innerHTML = "Something Went Wrong"
