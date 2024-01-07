@@ -36,20 +36,14 @@ for(code in country_list){
 }
 
 
-
-
-
 window.addEventListener('load', e => {
     e.preventDefault();
     getExchangeRate();
 })
-
 button.addEventListener('click', e => {
     e.preventDefault();
     getExchangeRate();
 })
-
-
 const exchangeIcon = document.querySelector('.drop-list .icon');
 exchangeIcon.addEventListener('click',()=>{
     let tempCode = fromCurrency.value;
@@ -59,8 +53,6 @@ exchangeIcon.addEventListener('click',()=>{
     loadFlag(toCurrency);
     getExchangeRate()
 })
-
-
 function getExchangeRate() {
     const amount = document.querySelector('.amount input');
     const exchangeRateText = document.querySelector('.exchange-rate');
@@ -69,7 +61,6 @@ function getExchangeRate() {
         amount.value = "1";
         amountVal = 1;
     }
-
     exchangeRateText.innerHTML = 'Getting Exchange Rate...'
     let url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency.value}`
 
