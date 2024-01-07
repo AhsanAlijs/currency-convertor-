@@ -1,14 +1,12 @@
 // main.js
 import { country_list } from './country-list.js'; // Adjust the path accordingly
 const apiKey = '151700b544b27d619b90a025';
-
 const dropList = document.querySelectorAll('.drop-list select');
 const fromCurrency = document.querySelector('.from select');
 const toCurrency = document.querySelector('.to select');
 const button = document.querySelector('form button');
 let currency_code = [];
 let code;
-
 for (let i = 0; i < dropList.length; i++) {
     for (code in country_list) {
         currency_code.push(code);
@@ -25,7 +23,6 @@ for (let i = 0; i < dropList.length; i++) {
         loadFlag(e.target)
     });
 }
-
 function loadFlag (element){
 for(code in country_list){
     if(code == element.value){
@@ -34,8 +31,6 @@ for(code in country_list){
     }
 }
 }
-
-
 window.addEventListener('load', e => {
     e.preventDefault();
     getExchangeRate();
