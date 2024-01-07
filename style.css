@@ -1,0 +1,30 @@
+form :where(input , select , button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form input{
+    height: 50px;
+    padding: 0 15px;
+    font-size: 17px;
+    border: 1px solid #999;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+
+}
+
+select::-webkit-scrollbar{
+    width: 8px;
+}
+select::-webkit-scrollbar-track{
+    background: #fff;
+}
+select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex items-center justify-center min-h-[100vh] bg-[#675AFE]">
+
+    <div class="wrapper bg-[#fff] w-[370px] p-[30px] rounded-[7px]">
+        <header class="text-[28px] font-[500] text-center">Currency Convertor</header>
+        <form class="mt-[40px] mb-[20px]">
+            <div class="amount">
+                <p class="text-[18px] mb-[5px]">Enter Amount</p>
+                <input type="text" value="1" class="">
+            </div>
+            <div class="drop-list flex items-center justify-between mt-[20px]">
+                <div class="form">
+                    <!-- list 1 -->
+                    <p>Form</p>
+                    <div class="select-box flex items-center justify-center w-[115px] h-[45px] border border-[#999] rounded-[5px]">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag" class="max-w-[25px]">
+                        <select class="w-[auto] text-[16px] mr-[-5px] ml-[5px]">
+                           
+                        </select>
+                    </div>
+                </div>
+                <!-- list 1 end -->
+                <div class="icon text-[22px] cursor-pointer mt-[30px]"><i class="fas fa-exchange-alt"></i></div>
+                <!-- list 2 Strat -->
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box flex items-center justify-center w-[115px] h-[45px] border border-[#999] rounded-[5px]">
+                        <img src="https://flagsapi.com/NP/flat/64.png" alt="flag" class="max-w-[25px]">
+                        <select class="w-[auto] text-[16px] mr-[-5px] ml-[5px]">
+                            
+                        </select>
+                    </div>
+                </div>
+                <!-- list 2 end -->
+
+            </div>
+            <div class="exchange-rate text-[17px] mt-[20px] mb-[30px]">1 USD = 118.16NPR</div>
+            <button class="h-[52px] text-[#fff] bg-[#675AFE] text-[17px]">Get Exchange Rate</button>
+        </form>
+
+    </div>
+
+    <!-- font awesom start -->
+    <script src="https://kit.fontawesome.com/5562aae272.js" crossorigin="anonymous"></script>
+    <!-- font awesom End -->
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/country-list.js"></script>
+</body>
+
+</html>
